@@ -1,0 +1,208 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "default": {},
+  "type": "object",
+  "properties": {
+    "系统": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "当前幕次": {
+          "default": 1,
+          "type": "number"
+        },
+        "当前时间": {
+          "default": "待初始化",
+          "type": "string"
+        },
+        "当前场景": {
+          "default": "待初始化",
+          "type": "string"
+        }
+      }
+    },
+    "知情度": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "王明": {
+          "default": {},
+          "type": "object",
+          "properties": {
+            "知黄莉性奴经历": {
+              "default": false,
+              "type": "boolean"
+            },
+            "知乐乐堕落": {
+              "default": "不知",
+              "type": "string",
+              "enum": [
+                "不知",
+                "论坛见闻",
+                "怀疑",
+                "确认",
+                "撞破全知"
+              ]
+            },
+            "知乐乐13岁伏笔": {
+              "default": false,
+              "type": "boolean"
+            },
+            "知圣魔论坛依s身份": {
+              "default": false,
+              "type": "boolean"
+            },
+            "知乐乐怀孕孩子父亲不明": {
+              "default": false,
+              "type": "boolean"
+            },
+            "知乐乐被设计": {
+              "default": false,
+              "type": "boolean"
+            }
+          }
+        },
+        "乐乐": {
+          "default": {},
+          "type": "object",
+          "properties": {
+            "知王明嫖娼": {
+              "default": false,
+              "type": "boolean"
+            },
+            "知黄莉与王明关系": {
+              "default": false,
+              "type": "boolean"
+            }
+          }
+        },
+        "黄莉": {
+          "default": {},
+          "type": "object",
+          "properties": {
+            "知乐乐被设计": {
+              "default": false,
+              "type": "boolean"
+            }
+          }
+        },
+        "张蕾": {
+          "default": {},
+          "type": "object",
+          "properties": {
+            "知乐乐被设计": {
+              "default": false,
+              "type": "boolean"
+            }
+          }
+        },
+        "杨芯": {
+          "default": {},
+          "type": "object",
+          "properties": {
+            "知乐乐与李力关系": {
+              "default": false,
+              "type": "boolean"
+            },
+            "知李力设计乐乐": {
+              "default": false,
+              "type": "boolean"
+            }
+          }
+        }
+      }
+    },
+    "身体状态": {
+      "default": {},
+      "type": "object",
+      "propertyNames": {
+        "type": "string",
+        "enum": [
+          "乐乐",
+          "黄莉",
+          "林诗音",
+          "白灵"
+        ]
+      },
+      "additionalProperties": {
+        "default": {},
+        "type": "object",
+        "properties": {
+          "当前幕": {
+            "default": 1,
+            "type": "number"
+          }
+        }
+      },
+      "required": [
+        "乐乐",
+        "黄莉",
+        "林诗音",
+        "白灵"
+      ]
+    },
+    "关系状态": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "王明_乐乐": {
+          "default": "幸福",
+          "type": "string",
+          "enum": [
+            "幸福",
+            "隐忍",
+            "分居",
+            "貌合神离",
+            "决裂",
+            "释怀"
+          ]
+        },
+        "王明_黄莉": {
+          "default": "上下级",
+          "type": "string",
+          "enum": [
+            "上下级",
+            "暧昧",
+            "偷情",
+            "切割",
+            "重燃",
+            "结婚"
+          ]
+        },
+        "乐乐_李力": {
+          "default": "无",
+          "type": "string",
+          "enum": [
+            "无",
+            "同事",
+            "被攻略",
+            "性奴",
+            "切割",
+            "再堕",
+            "亡命"
+          ]
+        }
+      }
+    },
+    "剧情标记": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "已触发事件": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "待触发事件": {
+          "default": [],
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

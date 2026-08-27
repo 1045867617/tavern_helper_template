@@ -1,0 +1,28 @@
+:root {
+  --c-primary: #c9a86a;
+  --c-background: #1a1816;
+  --c-surface: #221f1b;
+  --c-accent: #b0403f;
+  --c-danger: #7a3b2e;
+  --c-muted: #8a8276;
+  --c-highlight: #e8e3da;
+  --c-border: #3a352e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--c-background);
+  color: var(--c-highlight);
+  font-family: 'Sarasa Mono SC', 'Microsoft YaHei', sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+#app {
+  width: 100%;
+}
